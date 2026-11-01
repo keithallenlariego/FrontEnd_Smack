@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Design tokens from the Figma "Hearth Colors" variables and fonts.
+   They become classes: bg-cream, text-cocoa, border-line, font-serif ... */
+@theme {
+  --color-cream: #f5efe5;
+  --color-oat: #dbcdb8;
+  --color-caramel: #c18c5d;
+  --color-clay: #b97560;
+  --color-sage: #969f88;
+  --color-cocoa: #49362f;
+  --color-muted: #7a6659;
+  --color-line: #e2d9cc;
+  --color-surface: #fbf8f2;
+
+  --font-serif: 'Lora', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+@layer base {
+  body { @apply bg-cream font-sans text-cocoa; }
+  h1, h2, h3 { @apply font-serif font-normal; }
+  h1 em, h2 em, h3 em { @apply text-clay; }
+  button { @apply cursor-pointer; }
+}
