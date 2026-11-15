@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import Logo from './Logo.jsx';
-import Button from './Button.jsx';
 
 // `to` is optional: entries without it are plain text for now.
 const columns = [
@@ -30,7 +29,6 @@ export default function SiteFooter() {
         <p className="max-w-[820px] text-xs leading-[18px] text-oat">
           © 2026 Secure Web Chatroom · Designed and built by Keith Allen A. Lariego (Team Juan) · CSIT321, Cebu Institute of Technology – University
         </p>
-        <Button variant="light" size="sm" to="/signup">Sign up</Button>
       </div>
     </footer>
   );
